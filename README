@@ -1,0 +1,60 @@
+
+
+说明：
+
+
+flask是很优秀很强大的python web开发框架，它使用起来简单，并且能快速进行应用开发...
+
+
+而优化版的flask，是flask的本土化、新手化、规范化。
+
+
+特点：
+
+1、封装了蓝图注册（模块绑定）解决新手常犯的错误：互相引用
+
+2、优化并规范了模板的渲染调用，对于团队合作开发非常有利
+
+3、优化session并支持服务器端session驱动（file， mysql， memcached），支持session垃圾回收，支持session续命。
+
+4、优化flask-sqlalschemy 的基础模型， 支持orm自动映射，支持安全create方法，支持自动验证和自动完成
+
+5、优化flask-sqlalschemy的分页，使得分页更简单
+
+6、添加了类似thinkphp的函数，对于有thinkphp基础的人能快速上手
+
+7、可支持伪装应用
+
+
+一些函数：
+
+Q 数据库连接函数， 确保使用的数据库连接session和自定义模型的是同一个，避免新手回滚bug
+
+M 模型函数， 同 ThinkPHP， 可在没定义模型的情况下快速使用模型
+
+I 获取输入， 同 ThinkPHP， 获取输入数据
+
+success 用户交互， 同 ThinkPHP， 在ajax提交时会自动返回json数据
+error 用户交互， 同 ThinkPHP， 在ajax提交时自动返回json数据 
+
+IS_() 请求类型判断， 同 ThinkPHP的 IS_AJAX， IS_POST ... 
+
+R 路由函数，rout 的优化版
+
+display 模板渲染， render_template 的优化版
+
+
+
+最后：
+
+虽然是该优化版flask是对flask进行了封装优化，但是你要使用原生的flask是完全支持的！
+
+如果你使用过ThinkPHP，使用该优化版flask，你能快速进行Python应用开发
+相应的，如果你使用过该优化版flask，你也能快速适应ThinkPHP的开发 
+
+这就是该优化版flask的意义 —— 桥梁
+
+
+附：
+使用优化版flask开发案例：https://github.com/yaophp/mixed
+
